@@ -1,3 +1,4 @@
+import 'package:day1/constants/constants.dart';
 import 'package:day1/pages/root_page/bloc/root_bloc.dart';
 import 'package:day1/pages/root_page/root_page.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    setSize(context);
     return MultiBlocProvider(
       providers: [
         BlocProvider(
